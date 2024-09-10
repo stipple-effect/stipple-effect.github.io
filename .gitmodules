@@ -1,0 +1,6 @@
+[submodule "api"]
+	path = api
+	url = https://github.com/jbunke/se-api
+[submodule "docs"]
+	path = docs
+	url = https://github.com/jbunke/se-docs
