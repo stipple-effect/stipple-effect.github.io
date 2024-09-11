@@ -6,11 +6,14 @@
 
 $content-width: 960px;
 $content-padding: 8px;
-$tooltip-padding: 2px;
+
+html, body {
+    height: auto; // 100%;
+}
 
 body {
     // background-color: $bg-veil;
-    background-image: url("{{ site.baseurl }}/docs/assets/misc/background.png");
+    background-image: url("{{ site.baseurl }}/assets/img/background.png");
     background-repeat: repeat;
     margin: 0px;
 }
@@ -30,6 +33,10 @@ body {
 }
 
 nav {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+
     ul, ol {
         list-style-type: none;
         margin: 0;
@@ -84,8 +91,10 @@ footer {
 main {
     background-color: $bg-color;
     width: $content-width;
+    min-height: calc(100vh - 102px); // magic number
     margin: 0 auto;
     padding: $content-padding;
+    padding-top: 0px;
     border-left: 2px solid black;
     border-right: 2px solid black;
 
@@ -93,17 +102,24 @@ main {
         line-height: 1.8;
     }
         
-    p, ul, ol {
+    p, ul, ol, table {
         color: $body-text;
         font-family: $plain-text-font;
         line-height: 1.4;
+    }
 
-        img {
-            max-width: 80%;
-            text-align: center;
-            padding: 4px;
-            border: 1px solid black;
-        }
+    table, th, td {
+        border: 2px solid $body-text;
+        border-collapse: collapse;
+    }
+
+    table {
+        background-color: $code-bg;
+        margin: auto;
+    }
+
+    th, td {
+        padding: 3px;
     }
 
     p a, ul a, ol a, h1 a, h2 a, h3 a {
@@ -115,12 +131,42 @@ main {
         }
     }
 
+    p:has(>img) {
+        text-align: center;
+    }
+}
+
+.media-container {
+    margin: 10px;
+    position: relative;
+    padding: 4px;
+    border: 1px solid black;
+
+    .media {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.caption {
+    color: $body-text;
+    font-family: $plain-text-font;
+    font-size: 70%;
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
 }
 
 h1, h2, h3 {
     color: $heading-text;
     font-family: $plain-text-font;
     line-height: 1.8;
+}
+
+h1 {
+    margin: auto;
+    margin-top: 0px;
+    text-align: center;
 }
 
 h1 img {
@@ -130,15 +176,16 @@ h1 img {
 code.language-plaintext {
     background-color: $code-bg;
     color: $code-text;
+    font-family: $code-font;
 
     padding: 3px;
     padding-left: 5px;
     padding-right: 5px;
 
     border-radius: 6px;
-    // border: 1px solid $code-text;
+
     font-weight: normal;
-    font-size: 120%;
+    font-size: 90%;
 }
 
 a code.language-plaintext {
@@ -153,12 +200,16 @@ a code.language-plaintext {
     border: 1px dashed $code-text;
     border-radius: 6px;
     padding: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 
     pre {
         margin: 0px;
 
         code {
             color: $code-text;
+            font-family: $code-font;
+            font-size: 90%;
     
             /* comment */
             .c1 {
