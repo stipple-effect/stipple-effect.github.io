@@ -4,10 +4,14 @@
 @import "colors";
 @import "fonts";
 
-$content-width: 800px;
+$content-width: 960px;
+$content-padding: 8px;
+$tooltip-padding: 2px;
 
 body {
-    background-color: $bg-color;
+    // background-color: $bg-veil;
+    background-image: url("{{ site.baseurl }}/docs/assets/misc/background.png");
+    background-repeat: repeat;
     margin: 0px;
 }
 
@@ -16,14 +20,16 @@ body {
     text-align: center;
 }
 
-nav {
+.header, .footer {
     width: $content-width;
     background-color: #808080;
     margin: 0 auto;
-    padding: 4px;
-    padding-bottom: 0px;
+    padding: $content-padding;
     border: 2px solid black;
-    
+    padding-bottom: 0px;
+}
+
+nav {
     ul, ol {
         list-style-type: none;
         margin: 0;
@@ -39,10 +45,6 @@ nav {
     a {
         text-decoration: none;
         padding: 2px;
-
-        &:hover {
-            border-bottom: 1px dashed $link-text-hovered;
-        }
     }
 
     .external-icons {
@@ -50,9 +52,42 @@ nav {
     }
 }
 
+footer {
+    div {
+        overflow: hidden;
+        display: inline-block;
+        font-family: $plain-text-font;
+        font-weight: bold;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    p {
+        color: black;
+        margin: 0px;
+    }
+
+    .right {
+        float: right;
+    }
+    
+    a {
+        color: $bg-color;
+        text-decoration: none;
+    
+        &:hover {
+            color: $link-text-hovered;
+        }
+    }
+}
+
 main {
+    background-color: $bg-color;
     width: $content-width;
     margin: 0 auto;
+    padding: $content-padding;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 
     li {
         line-height: 1.8;
@@ -62,6 +97,13 @@ main {
         color: $body-text;
         font-family: $plain-text-font;
         line-height: 1.4;
+
+        img {
+            max-width: 80%;
+            text-align: center;
+            padding: 4px;
+            border: 1px solid black;
+        }
     }
 
     p a, ul a, ol a, h1 a, h2 a, h3 a {
@@ -78,6 +120,7 @@ main {
 h1, h2, h3 {
     color: $heading-text;
     font-family: $plain-text-font;
+    line-height: 1.8;
 }
 
 h1 img {

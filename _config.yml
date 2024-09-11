@@ -23,20 +23,6 @@ url: "https://jbunke.github.io" # the base hostname & protocol for your site, e.
 twitter_username: flinkerflitzer
 github_username:  jbunke
 
-defaults:
-  -
-    scope:
-      path: "api"
-      type: "pages"
-    values:
-      layout: "api"
-  -
-    scope:
-      path: "docs"
-      type: "pages"
-    values:
-      layout: "docs"
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
