@@ -4,21 +4,67 @@
 @import "colors";
 @import "fonts";
 
-main {
-    width: 800px;
-    margin: 0 auto;
-}
+$content-width: 800px;
 
 body {
     background-color: $bg-color;
+    margin: 0px;
 }
 
-p, ul, ol {
-    color: $body-text;
-    font-family: $plain-text-font;
-    line-height: 1.4;
+// for Humble Bundle widget
+.text-center {
+    text-align: center;
+}
+
+nav {
+    width: $content-width;
+    background-color: #808080;
+    margin: 0 auto;
+    padding: 4px;
+    padding-bottom: 0px;
+    border: 2px solid black;
+    
+    ul, ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: inline-block;
+
+        li {
+            float: left;
+        }
+    }
 
     a {
+        text-decoration: none;
+        padding: 2px;
+
+        &:hover {
+            border-bottom: 1px dashed $link-text-hovered;
+        }
+    }
+
+    .external-icons {
+        float: right;
+    }
+}
+
+main {
+    width: $content-width;
+    margin: 0 auto;
+
+    li {
+        line-height: 1.8;
+    }
+        
+    p, ul, ol {
+        color: $body-text;
+        font-family: $plain-text-font;
+        line-height: 1.4;
+    }
+
+    p a, ul a, ol a, h1 a, h2 a, h3 a {
         color: $link-text;
         text-decoration: none;
     
@@ -26,10 +72,7 @@ p, ul, ol {
             color: $link-text-hovered;
         }
     }
-}
 
-li {
-    line-height: 1.8;
 }
 
 h1, h2, h3 {
@@ -37,51 +80,77 @@ h1, h2, h3 {
     font-family: $plain-text-font;
 }
 
+h1 img {
+    max-width: 100%;
+}
+
 code.language-plaintext {
     background-color: $code-bg;
     color: $code-text;
+
     padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+
     border-radius: 6px;
-    border: 1px solid $code-text;
+    // border: 1px solid $code-text;
     font-weight: normal;
+    font-size: 120%;
 }
 
-.language-js {
+a code.language-plaintext {
+    &:hover {
+        color: $link-text-hovered;
+    }
+}
+
+// code block syntax highlighting
+.language-js>div {
     background-color: $code-bg;
+    border: 1px dashed $code-text;
+    border-radius: 6px;
     padding: 5px;
-    border: 1px solid $code-text;
 
-    pre code {
-        color: $code-text;
+    pre {
+        margin: 0px;
 
-        /* comment */
-        .c1 {
-            color: rgb(53, 153, 53);
-        }
-
-        /* string literal */
-        .dl, .s1 {
-            color: rgb(204, 70, 70);
-        }
-
-        /* scope punctuation */
-        .p {
-            color: #f19f1c;
-        }
-
-        /* semantic punctuation */
-        .o {
-            color: #a463d6;
-        }
-
-        /* num literal */
-        .mi {
-            color: #b5ce89;
-        }
-
-        /* keyword */
-        .k {
-            color: #447ed6;
+        code {
+            color: $code-text;
+    
+            /* comment */
+            .c1 {
+                color: rgb(53, 153, 53);
+            }
+    
+            /* string literal */
+            .dl, .s1 {
+                color: rgb(204, 70, 70);
+            }
+    
+            /* escape character */
+            .se {
+                color: rgb(218, 124, 37);
+            }
+    
+            /* scope punctuation */
+            .p {
+                color: #fdc62e;
+            }
+    
+            /* semantic punctuation */
+            .o {
+                color: #a463d6;
+            }
+    
+            /* num literal */
+            .mi {
+                color: #b5ce89;
+            }
+    
+            /* keyword */
+            .k {
+                color: #447ed6;
+            }
         }
     }
 }
