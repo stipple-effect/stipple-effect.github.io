@@ -4,7 +4,7 @@
 @import "colors";
 @import "fonts";
 
-$content-width: 960px;
+$content-width: 1080px;
 $content-padding: 8px;
 
 html, body {
@@ -19,8 +19,9 @@ body {
 }
 
 // for Humble Bundle widget
-.text-center {
+.hb-widget {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .header, .footer {
@@ -52,6 +53,21 @@ nav {
     a {
         text-decoration: none;
         padding: 2px;
+        color: $bg-color;
+    
+        &:hover {
+            color: $link-text-hovered;
+        }
+    }
+
+    .menu-item {
+        font-family: $menu-font;
+        font-weight: bold;
+        font-size: 130%;
+        margin-left: 5px;
+        margin-right: 5px;
+
+        display: inline-block;
     }
 
     .external-icons {
@@ -91,7 +107,7 @@ footer {
 main {
     background-color: $bg-color;
     width: $content-width;
-    min-height: calc(100vh - 102px); // magic number
+    min-height: calc(100vh - 114px); // magic number
     margin: 0 auto;
     padding: $content-padding;
     padding-top: 0px;
@@ -167,6 +183,7 @@ h1 {
     margin: auto;
     margin-top: 0px;
     text-align: center;
+    text-decoration: underline;
 }
 
 h1 img {
@@ -217,8 +234,8 @@ a code.language-plaintext {
             }
     
             /* string literal */
-            .dl, .s1 {
-                color: rgb(204, 70, 70);
+            .dl, .s1, .s2 {
+                color: rgb(226, 81, 81);
             }
     
             /* escape character */

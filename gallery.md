@@ -6,3 +6,10 @@ title: Stipple Effect - Gallery
 <!-- TODO -->
 
 This page is still under construction!
+
+<div class="media-container">
+    <img class="media" src="https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/complex-preview.gif" alt="Preview script" loading="lazy">
+    <div class="caption">
+        This script uses an intermediate lookup texture to map the contents of the project onto a spinning animation
+    </div>
+</div>

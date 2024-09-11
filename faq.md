@@ -1,5 +1,5 @@
 ---
-title: Stipple Effect - FAQs
+title: Stipple Effect - FAQ
 ---
 # Frequently Asked Questions
 

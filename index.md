@@ -3,7 +3,7 @@ title: Stipple Effect - scriptable pixel art editor
 ---
 # ![Stipple Effect](https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/logo-anim.gif)
 
-<!-- TODO -->
+# Make pixel art faster!
 
 This page is still under construction!
 
@@ -13,9 +13,39 @@ This page is still under construction!
     <iframe class="media" width="800" height="450" src="https://www.youtube.com/embed/Bj1foXYcHl4?si=QIQK4hOoGd34lcb3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-<div class="media-container">
-    <img class="media" src="https://raw.githubusercontent.com/jbunke/se-docs/master/assets/graphics/complex-preview.gif" alt="Preview script" loading="lazy">
-    <div class="caption">
-        This script uses an intermediate lookup texture to map the contents of the project onto a spinning animation
-    </div>
-</div>
+# Scripting
+
+* Automate program actions
+* Short and simple scripts with no boilerplate code
+* Scripted previews are recomputed instantly when an edit it made
+* Simulate post-processing effects
+* Transform your project contents
+* Reimport previews as their own projects
+
+# Animation
+
+* Onion skinning
+* Split/stitch
+* Edit during playback
+* Linked layers for static backgrounds
+
+# Colors & Painting
+
+* Extract colors from the canvas to a palette
+* Snap colors on canvas to nearest palette color
+* Dynamic gradient brush
+* Define custom brush behaviour with a script
+
+# Selection
+
+* Tools designed for pixel-perfect selection
+* Selection-based outlining
+* Customizable grid and checkerboard
+
+# And much more...
+
+* Generate time lapse
+* Design your own fonts
+* Granular undo/redo
+
+TODO
