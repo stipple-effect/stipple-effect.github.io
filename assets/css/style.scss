@@ -61,13 +61,19 @@ nav {
     }
 
     .menu-item {
-        font-family: $menu-font;
-        font-weight: bold;
-        font-size: 130%;
-        margin-left: 5px;
-        margin-right: 5px;
-
         display: inline-block;
+
+        &:hover .static-label {
+            display: none;
+        }
+
+        .hover-label {
+            display: none;
+        }
+
+        &:hover .hover-label {
+            display: inline-block;
+        }
     }
 
     .external-icons {
@@ -80,7 +86,6 @@ footer {
         overflow: hidden;
         display: inline-block;
         font-family: $plain-text-font;
-        font-weight: bold;
         padding-top: 4px;
         padding-bottom: 4px;
     }
@@ -175,6 +180,12 @@ main {
     }
 }
 
+.core-content, .content {
+    ul {
+        padding-left: 20px;
+    }
+}
+
 .media-container {
     margin: 10px;
     position: relative;
@@ -196,25 +207,26 @@ main {
     margin-top: 5px;
 }
 
-h1, h2, h3 {
-    color: $heading-text;
-    font-family: $plain-text-font;
-    line-height: 1.8;
-}
-
 hr {
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
+h1, h2, h3 {
+    color: $heading-text;
+    font-family: $heading-font;
+    line-height: 1.8;
+    font-weight: normal;
+}
+
 h1 {
-    margin: auto;
-    margin-top: 0px;
+    margin-top: 0;
+    padding-top: 10px;
     text-align: center;
     text-decoration: underline;
 }
 
-h1 img {
+.banner img {
     max-width: 100%;
 }
 

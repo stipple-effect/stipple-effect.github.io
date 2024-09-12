@@ -1,0 +1,12 @@
+---
+---
+// here
+.pair-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pair-box-left, .pair-box-right {
+    flex: 50%;
+}
