@@ -113,7 +113,9 @@ main {
     padding-top: 0px;
     border-left: 2px solid black;
     border-right: 2px solid black;
+}
 
+.core-content {
     li {
         line-height: 1.8;
     }
@@ -147,7 +149,7 @@ main {
         }
     }
 
-    p:has(>img) {
+    p:has(img:first-child:last-child) {
         text-align: center;
     }
 }
@@ -167,7 +169,7 @@ main {
 .caption {
     color: $body-text;
     font-family: $plain-text-font;
-    font-size: 70%;
+    font-size: 90%;
     font-style: italic;
     text-align: center;
     margin-top: 5px;
@@ -258,8 +260,8 @@ a code.language-plaintext {
                 color: #b5ce89;
             }
     
-            /* keyword */
-            .k {
+            /* keywords and other literals */
+            .k, .kc {
                 color: #447ed6;
             }
         }
