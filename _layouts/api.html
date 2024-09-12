@@ -1,6 +1,23 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        {% include header.html %}
 
-<!-- TODO - add search to API -->
- {{ content }}
+        <main>
+            <div class="row">
+                <div class="sidebar">
+                    <!-- TODO - add search to API -->
+                     <h2>Contents:</h2>
+                    {% assign sidebar = site.pages | where: "name", "sidebar.md" | first %}
+                    {{ sidebar.content | markdownify }}
+                </div>
+                <div class="core-content">
+                    {{ content }}
+                </div>
+            </div>
+        </main>
+
+        {% include footer.html %}
+    </body>
+</html>

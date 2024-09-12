@@ -115,7 +115,28 @@ main {
     border-right: 2px solid black;
 }
 
+.row {
+    display: flex;
+}
+
+.sidebar {
+    flex: 16%;
+    margin: 8px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-right: 2px solid black;
+
+    ul {
+        padding-left: 15px;
+        list-style: none;
+    }
+}
+
 .core-content {
+    flex: 84%;
+}
+
+.sidebar, .core-content, .content {
     li {
         line-height: 1.8;
     }
@@ -181,6 +202,11 @@ h1, h2, h3 {
     line-height: 1.8;
 }
 
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 h1 {
     margin: auto;
     margin-top: 0px;
@@ -214,7 +240,7 @@ a code.language-plaintext {
 }
 
 // code block syntax highlighting
-.language-js>div {
+.language-js > div {
     background-color: $code-bg;
     border: 1px dashed $code-text;
     border-radius: 6px;
