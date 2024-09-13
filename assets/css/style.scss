@@ -314,6 +314,15 @@ a code.language-plaintext {
             .ds-function {
                 color: #d19b27;
             }
+
+            .ds-property {
+                color: #a49dcf;
+            }
+
+            // namespace
+            .namespace {
+                font-style: italic;
+            }
         }
     }
 }

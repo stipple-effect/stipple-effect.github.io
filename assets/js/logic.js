@@ -9,13 +9,16 @@ function parseDeltascript() {
     ]);
     
     document.querySelectorAll(".nx").forEach(codeWord => {
+        const next = codeWord.nextElementSibling;
+        const previous = codeWord.previousElementSibling;
+
         if (dsTypes.has(codeWord.innerHTML))
             codeWord.setAttribute("class", "ds-type");
-        else {
-            const next = codeWord.nextElementSibling;
-
-            if (next instanceof Element && next.innerHTML.startsWith("("))
-                codeWord.setAttribute("class", "ds-function");
-        }
+        else if (codeWord.innerHTML.startsWith("$"))
+            codeWord.setAttribute("class", "namespace");
+        else if (next instanceof Element && next.innerHTML.startsWith("("))
+            codeWord.setAttribute("class", "ds-function");
+        else if (previous instanceof Element && previous.innerHTML === ".")
+            codeWord.setAttribute("class", "ds-property");
     });
 }
