@@ -234,6 +234,7 @@ code.language-plaintext {
     background-color: $code-bg;
     color: $code-text;
     font-family: $code-font;
+    font-variant-ligatures: none;
 
     padding: 3px;
     padding-left: 5px;
@@ -267,6 +268,7 @@ a code.language-plaintext {
             color: $code-text;
             font-family: $code-font;
             font-size: 90%;
+            font-variant-ligatures: none;
     
             /* comment */
             .c1 {
@@ -301,6 +303,16 @@ a code.language-plaintext {
             /* keywords and other literals */
             .k, .kc {
                 color: #447ed6;
+            }
+
+            // type
+            .ds-type {
+                color: #1bf5f5;
+            }
+
+            // function
+            .ds-function {
+                color: #d19b27;
             }
         }
     }
