@@ -5,17 +5,31 @@
         {% include header.html %}
 
         <main>
-            <div class="row">
-                <div class="sidebar">
-                    <!-- TODO - add search to API -->
-                     <h2>Contents:</h2>
-                    {% assign sidebar = site.pages | where: "name", "sidebar.md" | first %}
-                    {{ sidebar.content | markdownify }}
+            {% if page.name == "README.md" %}
+                {% include standard.html %}
+            {% else %}
+                <div class="row">
+                    <div class="sidebar api-sb">
+                        <!-- TODO - add search to API -->
+                        <h2>Contents</h2>
+                        {% assign sidebar = site.pages | 
+                            where: "name", "sidebar.md" | 
+                            first %}
+                        {{ sidebar.content | markdownify }}
+                        <br>
+                        <div class="edit-page">
+                            <p>
+                                <a href="https://github.com/jbunke/se-api/edit/master/{{ page.name }}">
+                                    Edit this page
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="core-content api-cc">
+                        {{ content }}
+                    </div>
                 </div>
-                <div class="core-content">
-                    {{ content }}
-                </div>
-            </div>
+            {% endif %}
         </main>
 
         {% include footer.html %}

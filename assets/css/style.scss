@@ -122,10 +122,10 @@ main {
 
 .row {
     display: flex;
+    flex-direction: row;
 }
 
 .sidebar {
-    flex: 16%;
     margin: 8px;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -137,11 +137,29 @@ main {
     }
 }
 
-.core-content {
+.api-sb {
+    flex: 16%;
+}
+
+.docs-sb {
+    flex: 20%;
+}
+
+.edit-page {
+    font-style: italic;
+}
+
+.api-cc {
     flex: 84%;
 }
 
+.docs-cc {
+    flex: 80%;
+}
+
 .sidebar, .core-content, .content {
+    min-width: 0;
+    
     li {
         line-height: 1.8;
     }
@@ -177,6 +195,7 @@ main {
 
     p:has(img:first-child:last-child) {
         text-align: center;
+        // TODO - stop from overflowing
     }
 }
 
@@ -263,6 +282,7 @@ a code.language-plaintext {
 
     pre {
         margin: 0px;
+        overflow: auto;
 
         code {
             color: $code-text;

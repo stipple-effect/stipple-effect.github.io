@@ -1,6 +1,33 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        {% include header.html %}
 
-<!-- TODO - add search to documentation -->
- {{ content }}
+        <main>
+            <div class="row">
+                <div class="sidebar docs-sb">
+                    <!-- TODO - add search to documentation -->
+                    <h2>Contents</h2>
+                    {% assign sidebar = site.pages | 
+                        where: "name", "docs-sidebar.md" | 
+                        first %}
+                    {{ sidebar.content | markdownify }}
+                    <br>
+                    <div class="edit-page">
+                        <p>
+                            <a href="https://github.com/jbunke/se-docs/edit/master/{{ page.name }}">
+                                Edit this page
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="core-content docs-cc">
+                    {{ content }}
+                </div>
+            </div>
+        </main>
+
+        {% include footer.html %}
+    </body>
+</html>
