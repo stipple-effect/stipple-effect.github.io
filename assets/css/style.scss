@@ -206,13 +206,14 @@ main {
 }
 
 .media-container {
-    margin: 10px;
+    margin: 10px auto;
     position: relative;
     padding: 4px;
     border: 1px solid black;
+    width: fit-content;
 
     .media {
-        width: 100%;
+        width: 640px;
         text-align: center;
     }
 }

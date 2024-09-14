@@ -1,12 +1,60 @@
 ---
 ---
-// here
+@import "colors";
+@import "fonts";
+
+.feature-section {
+    margin-top: 50px;
+    text-align: center;
+    font-family: $plain-text-font;
+}
+
+.feature-category {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 180%;
+    // text-decoration: underline;
+    background-color: #808080;
+    color: $bg-color;
+}
+
+.features {
+    color: $body-text;
+
+    a {
+        color: $link-text;
+        text-decoration: none;
+    
+        &:hover {
+            color: $link-text-hovered;
+        }
+    }
+}
+
+.feature-tagline {
+    font-size: 130%;
+}
+
+.feature-gif {
+    width: 320px;
+    height: 180px;
+}
+
+.feature-caption {
+    font-style: italic;
+    font-size: 85%;
+    max-width: 400px;
+    margin: auto;
+    text-wrap: balance;
+}
+
 .pair-box {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; // center
 }
 
 .pair-box-left, .pair-box-right {
     flex: 50%;
+    margin: 20px;
 }
