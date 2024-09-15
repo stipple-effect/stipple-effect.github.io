@@ -195,7 +195,10 @@ main {
 
     p:has(img:first-child:last-child) {
         text-align: center;
-        // TODO - stop from overflowing
+        
+        img {
+            max-width: 100%;
+        }
     }
 }
 

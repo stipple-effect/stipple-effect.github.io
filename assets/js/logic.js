@@ -4,8 +4,8 @@ window.onload = () => {
 
 function parseDeltascript() {
     const dsTypes = new Set([
-        "int", "bool", "float", "char", "string", 
-        "color", "image", "project", "layer", "palette"
+        "int", "bool", "float", "char", "string", "color", "image", 
+        "project", "layer", "palette", "script", "save_config"
     ]);
     
     document.querySelectorAll(".nx").forEach(codeWord => {

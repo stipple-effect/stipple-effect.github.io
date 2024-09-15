@@ -1,6 +1,7 @@
 ---
 title: Buy Stipple Effect
 ---
+
 # Buy Stipple Effect
 
 You can buy Stipple Effect through the Humble Bundle widget below:
