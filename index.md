@@ -9,6 +9,8 @@ title: Stipple Effect - scriptable pixel art editor
     <iframe class="media" width="800" height="450" src="https://www.youtube.com/embed/Bj1foXYcHl4?si=QIQK4hOoGd34lcb3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+<!-- TODO -->
+
 <div class="feature-section">
     <div class="feature-category">Scripting</div>
     <div class="features">
@@ -48,7 +50,6 @@ title: Stipple Effect - scriptable pixel art editor
                 <div class="feature-caption">Reimport the output of a scripted preview as into Stipple Effect as its own project - optionally with individual layers preserved</div>
             </div>
         </div>
-        <!-- TODO -->
     </div>
     <div class="feature-category">Animation</div>
     <div class="features">
