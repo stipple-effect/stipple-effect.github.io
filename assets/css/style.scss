@@ -295,7 +295,7 @@ a code.language-plaintext {
             font-variant-ligatures: none;
     
             /* comment */
-            .c1 {
+            .c1, .cm {
                 color: rgb(53, 153, 53);
             }
     
@@ -320,7 +320,7 @@ a code.language-plaintext {
             }
     
             /* num literal */
-            .mi {
+            .mi, .mh {
                 color: #b5ce89;
             }
     
