@@ -21,4 +21,14 @@ function parseDeltascript() {
         else if (previous instanceof Element && previous.innerHTML === ".")
             codeWord.setAttribute("class", "ds-property");
     });
+
+    document.querySelectorAll(".err").forEach(codeWord => {
+        const next = codeWord.nextElementSibling;
+
+        if (codeWord.innerHTML === "#" && next instanceof Element && 
+            (next.innerHTML.length == 6 || next.innerHTML.length == 8)) {
+            codeWord.setAttribute("class", "hcl");
+            next.setAttribute("class", "hcl");
+        }
+    });
 }
