@@ -249,6 +249,14 @@ h1 {
     text-decoration: underline;
 }
 
+kbd {
+    background-color: black;
+    border: solid 1px $bg-veil;
+    border-bottom: solid 3px $bg-veil;
+    border-radius: 6px;
+    padding: 2px 4px;
+}
+
 .banner img {
     max-width: 100%;
 }
