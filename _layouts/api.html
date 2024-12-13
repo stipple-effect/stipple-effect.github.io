@@ -13,7 +13,7 @@
                         <!-- TODO - add search to API -->
                         <h2>Contents</h2>
                         {% assign sidebar = site.pages | 
-                            where: "name", "sidebar.md" | 
+                            where: "name", "api-sidebar.md" | 
                             first %}
                         {{ sidebar.content | markdownify }}
                         <br>
