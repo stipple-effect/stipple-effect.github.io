@@ -1,5 +1,6 @@
 window.onload = () => {
     parseDeltascript();
+    formatFakeH4Bodies();
 };
 
 function parseDeltascript() {
@@ -29,6 +30,22 @@ function parseDeltascript() {
             (next.innerHTML.length == 6 || next.innerHTML.length == 8)) {
             codeWord.setAttribute("class", "hcl");
             next.setAttribute("class", "hcl");
+        }
+    });
+}
+
+function formatFakeH4Bodies() {
+    const coreContentParagraphs = document.querySelectorAll('.core-content p:has(strong:only-child)');
+    const contentParagraphs = document.querySelectorAll('.content p:has(strong:only-child)');
+    
+    const allParagraphs = [...coreContentParagraphs, ...contentParagraphs];
+
+    allParagraphs.forEach(fakeHeader => {
+        if (fakeHeader.childNodes.length === 1) {
+            const body = fakeHeader.nextElementSibling;
+
+            if (body instanceof Element)
+                body.setAttribute("class", "fake-h4-body");
         }
     });
 }

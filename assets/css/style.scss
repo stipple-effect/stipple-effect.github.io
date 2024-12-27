@@ -198,13 +198,26 @@ main {
         
         img {
             max-width: 100%;
+            border: 1px solid black;
         }
     }
 }
 
 .core-content, .content {
-    ul {
+    ul, ol {
         padding-left: 20px;
+    }
+
+    h2, h3, p, li {
+        margin-bottom: 0;
+
+        img {
+            vertical-align: middle;
+        }
+    }
+
+    h2+p, h3+p, .fake-h4-body {
+        margin-top: 0;
     }
 }
 

@@ -4,15 +4,15 @@ title: Stipple Effect - FAQ
 
 # Frequently Asked Questions
 
-## Why Stipple Effect?
+## Why *Stipple Effect*?
 
-### **Q: Why would I use Stipple Effect over more established and mature software like Aseprite or a great free and open-source alternative like Pixelorama?**
+### **Q: Why would I use _Stipple Effect_ over more established and mature software like _Aseprite_ or a great free and open-source alternative like _Pixelorama_?**
 
-A: There is no shortage of good programs available for making pixel art, and there is no wrong choice! However, here are is an argument for why you may want to consider Stipple Effect may be the best choice for your needs.
+A: There is no shortage of good programs available for making pixel art, and there is no wrong choice! However, here are is an argument for why *Stipple Effect* may be the best choice for your needs.
 
-Stipple Effect is perhaps most distinguished from other pixel editors by some of the applications of its scripting system. If you are a game developer making a 2D pixel art game with a lot of animated assets of the same form (physical shape, dimensions, pose, etc.), Stipple Effect could make your life so much easier.
+*Stipple Effect* is perhaps most distinguished from other pixel editors by the range of **applications of its scripting system**. If you are a game developer making a 2D pixel art game with a lot of animated assets of the same form (physical shape, dimensions, pose, etc.), *Stipple Effect* could make your life so much easier.
 
-Imagine you are making a game with tons of NPCs, each of which has to have idle animations, walking animations, and a certain number of action animations. Or a game with significant character customization in the form of clothing and vanity items. At present, you would probably have to individually animate every NPC and every clothing item for each unique animation frame. Using Stipple Effect, however, you can spend a bit of time configuring a lookup relationship between a single texture and an animated UV lookup asset, and map the texture to the animation via a preview script. In the long run, this will save hundreds of hours of tedious work, as you will only have to draw a single texture for each item/NPC you are adding to your game.
+Imagine you are making a game with tons of NPCs, each of which has to have idle animations, walking animations, and a certain number of action animations. Or a game with significant character customization in the form of clothing and vanity items. At present, you would probably have to individually animate every NPC and every clothing item for each unique animation frame. Using *Stipple Effect*, however, you can spend a bit of time configuring a lookup relationship between a single texture and an animated UV lookup asset, and map the texture to the animation via a preview script. In the long run, this will save **hundreds of hours** of tedious work, as you will only have to draw a single texture for each item/NPC you are adding to your game.
 
 <div class="media-container">
     <img class="media" src="{{ site.baseurl }}/docs/assets/graphics/complex-preview.gif" alt="Preview script" loading="lazy">
@@ -21,11 +21,11 @@ Imagine you are making a game with tons of NPCs, each of which has to have idle 
     </div>
 </div>
 
-Additionally, Stipple Effect is still a very young program. Programs like Aseprite and Pixelorama have been in development for years, and will probably receive major updates at a slower rate than Stipple Effect in the foreseeable future.
+Additionally, *Stipple Effect* is still a very young program. Programs like *Aseprite* and *Pixelorama* have been in development for years, and will probably receive major updates at a slower rate than *Stipple Effect* in the foreseeable future.
 
-### **Q: Why does Stipple Effect use its own scripting language? I don't want to learn a whole programming language for a single program.**
+### **Q: Why does _Stipple Effect_ use its own scripting language? I don't want to learn a whole programming language for a single program.**
 
-A: These were the priorities for scripts when it came time to implement scripting in Stipple Effect:
+A: These were the priorities for scripts when it came time to implement scripting in *Stipple Effect*:
 
 * quick, succinct and easy to write
 * expressive and easy to read
@@ -62,11 +62,11 @@ A: These were the priorities for scripts when it came time to implement scriptin
 
 *Developer's note:*
 
-The downside of implementing a domain-specific language is a lack of tool support. As of now, I have released [a VS Code extension](https://marketplace.visualstudio.com/items?itemName=jordanbunke.deltascript-for-stipple-effect) that provides code highlighting for the Stipple Effect extension dialect of DeltaScript. I plan to include command-line tools for running and debugging DeltaScript code in future Stipple Effect updates.
+The downside of implementing a domain-specific language is a lack of tool support. As of now, I have released [a VS Code extension](https://marketplace.visualstudio.com/items?itemName=jordanbunke.deltascript-for-stipple-effect) that provides code highlighting for the *Stipple Effect* extension dialect of DeltaScript. I plan to include command-line tools for running and debugging DeltaScript code in future *Stipple Effect* updates.
 
 ### **Q: I just want to make pixel art. I don't really care about scripting / don't have any programming experience. Is this program for me?**
 
-A: Yes! Stipple Effect is designed to support you however you want to work. You can get plenty of use out of the program without ever touching the scripting system. Stipple Effect has tons of non-technical, pure pixel art and animation features for you to experiment with.
+A: Yes! *Stipple Effect* is designed to support you however you want to work. You can get plenty of use out of the program without ever touching the scripting system. *Stipple Effect* has tons of non-technical, pure pixel art and animation features for you to experiment with.
 
 ---
 
@@ -74,13 +74,13 @@ A: Yes! Stipple Effect is designed to support you however you want to work. You 
 
 ### **Q: How do I get updates?**
 
-A: Stipple Effect is not updated automatically, so you will have to look out for updates and download them when they are released. The best way to do this is to follow the project or the developer somewhere:
+A: *Stipple Effect* is not updated automatically, so you will have to look out for updates and download them when they are released. The best way to do this is to follow the project or the developer somewhere:
 
 * [Star Stipple Effect on GitHub](https://github.com/jbunke/stipple-effect)
 * [Itch.io - Add Stipple Effect to a collection or follow the developer](https://flinkerflitzer.itch.io/stipple-effect)
 * [Follow the developer on X](https://x.com/flinkerflitzer)
 
-It is important to remember whether you bought Stipple Effect via Itch.io or Humble Bundle. When an update is released, **you will have to download the latest version on the same marketplace that you initially purchased the program**. If you cannot remember where you bought Stipple Effect, please contact the developer.
+It is important to remember whether you bought *Stipple Effect* via Itch.io or Humble Bundle. When an update is released, **you will have to download the latest version on the same marketplace that you initially purchased the program**. If you cannot remember where you bought *Stipple Effect*, please contact the developer.
 
 ### **Q: What can I expect from future updates?**
 
