@@ -1,6 +1,7 @@
 window.onload = () => {
     parseDeltascript();
     formatFakeH4Bodies();
+    fixHeaderIDs();
 };
 
 function parseDeltascript() {
@@ -44,8 +45,27 @@ function formatFakeH4Bodies() {
         if (fakeHeader.childNodes.length === 1) {
             const body = fakeHeader.nextElementSibling;
 
-            if (body instanceof Element)
+            if (body instanceof Element && body.nodeName === "P")
                 body.setAttribute("class", "fake-h4-body");
         }
     });
+}
+
+function fixHeaderIDs() {
+    const headers = document.querySelectorAll('h2[id], h3[id');
+    let targetElement = null;
+
+    headers.forEach(header => {
+        const currentId = header.id;
+    
+        if (currentId.startsWith('-')) {
+            header.id = currentId.slice(1);
+
+            if (location.hash === `#${header.id}`)
+                targetElement = header;
+        }
+    });
+
+    if (targetElement instanceof Element)
+        targetElement.scrollIntoView({ behavior: 'smooth' });
 }

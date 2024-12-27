@@ -34,7 +34,7 @@ body {
 }
 
 nav {
-    position: sticky;
+    // position: sticky;
     z-index: 2;
     top: 0;
 
@@ -196,7 +196,7 @@ main {
     p:has(img:first-child:last-child) {
         text-align: center;
         
-        img {
+        img:not([alt="Windows"]):not([alt^="macOS"]) {
             max-width: 100%;
             border: 1px solid black;
         }
@@ -244,8 +244,8 @@ main {
 }
 
 hr {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 h1, h2, h3 {
