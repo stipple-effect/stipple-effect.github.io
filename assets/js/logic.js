@@ -45,8 +45,14 @@ function formatFakeH4Bodies() {
         if (fakeHeader.childNodes.length === 1) {
             const body = fakeHeader.nextElementSibling;
 
-            if (body instanceof Element && body.nodeName === "P")
-                body.setAttribute("class", "fake-h4-body");
+            if (body instanceof Element) {
+                switch (body.nodeName) {
+                    case "P":
+                    case "UL":
+                        body.setAttribute("class", "fake-h4-body");
+                        break;
+                }
+            }
         }
     });
 }
