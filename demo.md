@@ -9,15 +9,15 @@ The demo contains all the features of the full program **except the ability to s
 ![Windows](assets/img/windows.png)
 
 <div class="download-button">
-    <a target="_blank" href="https://www.dropbox.com/scl/fi/hiuminzittdg912k8zt6l/stipple-effect-demo-1_2_1-installer.exe?rlkey=92yn7g5icd8x7w21bhi4hybix&st=jqtj6d3t&dl=0">
-        Stipple Effect [demo] v1.2.1 (Windows Installer)
+    <a target="_blank" href="https://www.dropbox.com/scl/fi/4umcodoy7sg7wddp1y4vy/stipple-effect-demo-1_2_2-installer.exe?rlkey=xb8cwfmibf3fs4ktztzuoa02t&st=4hms3why&dl=0">
+        Stipple Effect [demo] v1.2.2 (Windows Installer)
     </a>
 </div>
 
 ![macOS & Linux distributions](assets/img/macos-ubuntu.png)
 
 <div class="download-button">
-    <a  target="_blank" href="https://www.dropbox.com/scl/fi/y6xinc0651wtihf7s8go6/stipple-effect-demo-1_2_1.zip?rlkey=gb1me03eafftv6dyuukeeysbk&st=3dgd1u4k&dl=0">
-        Stipple Effect [demo] v1.2.1 (Cross-Platform Build)
+    <a  target="_blank" href="https://www.dropbox.com/scl/fi/jvct8ilhn5sant9rxt6tl/stipple-effect-demo-1_2_2.zip?rlkey=ruvuwqoq6k1xfqmogxstkd6y1&st=yxpvuygl&dl=0">
+        Stipple Effect [demo] v1.2.2 (Cross-Platform Build)
     </a>
 </div>
