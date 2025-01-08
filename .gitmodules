@@ -1,6 +1,6 @@
 [submodule "api"]
 	path = api
-	url = https://github.com/jbunke/se-api
+	url = https://github.com/stipple-effect/api
 [submodule "docs"]
 	path = docs
-	url = https://github.com/jbunke/se-docs
+	url = https://github.com/stipple-effect/docs

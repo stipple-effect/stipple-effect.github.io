@@ -32,7 +32,7 @@ The *Cross-Platform Build* distribution will require a separate one-time install
 
 ### License
 
-Stipple Effect is distributed under an end-user license agreement (EULA). Read it [here](https://github.com/jbunke/stipple-effect/blob/master/LICENSE) to understand your rights and responsibilities as a user.
+Stipple Effect is distributed under an end-user license agreement (EULA). Read it [here](https://github.com/stipple-effect/stipple-effect/blob/master/LICENSE) to understand your rights and responsibilities as a user.
 
 ## Demo
 

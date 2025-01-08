@@ -16,8 +16,8 @@ title: Stipple Effect - scriptable pixel art editor
 description: >- # this means to ignore newlines until "baseurl:"
   Stipple Effect is a pixel art editor that supports animation and scripting. 
   It is designed to facilitate a variety of workflows and to encourage rapid, iterative creation of video game art assets and other types of artwork.
-baseurl: "/se" # the subpath of your site, e.g. /blog
-url: "https://jbunke.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://stipple-effect.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 defaults:
   -

@@ -76,7 +76,7 @@ A: Yes! *Stipple Effect* is designed to support you however you want to work. Yo
 
 A: *Stipple Effect* is not updated automatically, so you will have to look out for updates and download them when they are released. The best way to do this is to follow the project or the developer somewhere:
 
-* [Star Stipple Effect on GitHub](https://github.com/jbunke/stipple-effect)
+* [Star Stipple Effect on GitHub](https://github.com/stipple-effect/stipple-effect)
 * [Itch.io - Add Stipple Effect to a collection or follow the developer](https://flinkerflitzer.itch.io/stipple-effect)
 * [Follow the developer on X](https://x.com/flinkerflitzer)
 
@@ -84,15 +84,15 @@ It is important to remember whether you bought *Stipple Effect* via Itch.io or H
 
 ### **Q: What can I expect from future updates?**
 
-A: A roadmap of tentative features for future updates is maintained [here](https://github.com/jbunke/stipple-effect/blob/master/roadmap.md).
+A: A roadmap of tentative features for future updates is maintained [here](https://github.com/stipple-effect/stipple-effect/blob/master/roadmap.md).
 
 ### **Q: How can I report a bug?**
 
-A: You can report bugs [here](https://github.com/jbunke/stipple-effect/issues/new/choose). Before filing a bug report, please read through [the existing reports](https://github.com/jbunke/stipple-effect/issues?q=is%3Aissue+label%3Abug+is%3Aopen) to see whether the bug has already been reported by someone else.
+A: You can report bugs [here](https://github.com/stipple-effect/stipple-effect/issues/new/choose). Before filing a bug report, please read through [the existing reports](https://github.com/stipple-effect/stipple-effect/issues?q=is%3Aissue+label%3Abug+is%3Aopen) to see whether the bug has already been reported by someone else.
 
 ### **Q: How can I request a feature?**
 
-A: You can request a feature [here](https://github.com/jbunke/stipple-effect/issues/new/choose).
+A: You can request a feature [here](https://github.com/stipple-effect/stipple-effect/issues/new/choose).
 
 ### **Q: Why is the file size for the Windows Installer so much bigger than the Cross-Platform Build?**
 
