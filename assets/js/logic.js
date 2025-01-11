@@ -2,6 +2,7 @@ window.onload = () => {
     parseDeltascript();
     formatFakeH4Bodies();
     fixHeaderIDs();
+    centerImages();
 };
 
 function parseDeltascript() {
@@ -58,7 +59,7 @@ function formatFakeH4Bodies() {
 }
 
 function fixHeaderIDs() {
-    const headers = document.querySelectorAll('h2[id], h3[id');
+    const headers = document.querySelectorAll('h2[id], h3[id]');
     let targetElement = null;
 
     headers.forEach(header => {
@@ -74,4 +75,19 @@ function fixHeaderIDs() {
 
     if (targetElement instanceof Element)
         targetElement.scrollIntoView({ behavior: 'smooth' });
+}
+
+function centerImages() {
+    document.querySelectorAll('p').forEach(p => {
+        const children = Array.from(p.childNodes);
+        const hasOnlyImage = children.length === 1 && children[0].tagName === 'IMG';
+        const hasOnlyImageAndWhitespace = children.every(node => 
+            (node.nodeType === Node.ELEMENT_NODE && node.tagName === 'IMG') ||
+            (node.nodeType === Node.TEXT_NODE && !node.textContent.trim())
+        );
+
+        if (hasOnlyImage || hasOnlyImageAndWhitespace) {
+            p.classList.add('centered-img');
+        }
+    });
 }
