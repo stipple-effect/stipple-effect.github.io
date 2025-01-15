@@ -171,6 +171,22 @@ main {
     margin-bottom: 70px;
 }
 
+.show-itch {
+    display: block;
+}
+
+.show-hb {
+    display: none;
+}
+
+#itch-button, #hb-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
 .sidebar, .core-content, .content {
     min-width: 0;
     
@@ -210,7 +226,7 @@ main {
     .centered-img {
         text-align: center;
         
-        img:not([alt="Windows"]):not([alt^="macOS"]):not([alt^="embed-dial"]) {
+        img:not([alt="Windows"]):not([alt^="macOS"]) {
             max-width: 100%;
             border: 1px solid black;
         }

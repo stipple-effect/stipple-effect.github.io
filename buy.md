@@ -4,15 +4,27 @@ title: Buy Stipple Effect
 
 # Buy Stipple Effect
 
-You can buy *Stipple Effect* through the Humble Bundle widget below:
+You can buy *Stipple Effect* through [itch.io![](./assets/img/external.png)](https://flinkerflitzer.itch.io/stipple-effect) or the Humble Bundle. Click the toggle below to bring up the other marketplace's widget.
 
-<br>
-
-<div class="buy-widget">
-    <iframe src="https://www.humblebundle.com/widget/v2/product/stipple-effect/VYGLVvGJGo?theme=dark" width="600" height="329" style="border: none;" scrolling="no" frameborder="0"></iframe>
+<div class="image-container">
+    <img src="./assets/icons/embed-dial-itch.png" id="itch-button" class="show-itch" title="itch.io | Click to switch to Humble Bundle">
+    <img src="./assets/icons/embed-dial-humble-bundle.png" id="hb-button" class="show-hb" title="Humble Bundle | Click to switch to itch.io">
 </div>
 
-Alternatively, you can buy the program on [Itch.io![](./assets/img/external.png)](https://flinkerflitzer.itch.io/stipple-effect). Buying *Stipple Effect* via either marketplace will give you access to all future updates free of any additional charge.
+<div class="buy-widget">
+    <div class="show-itch">
+        {% include itch-widget.html %}
+    </div>
+    <div class="show-hb">
+        {% include hb-widget.html %}
+    </div>
+</div>
+
+<script>
+    {% include toggle-widgets.js %}
+</script>
+
+Buying *Stipple Effect* via either marketplace will give you access to all future updates free of any additional charge.
 
 ## Information
 
