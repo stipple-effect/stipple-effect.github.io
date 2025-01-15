@@ -19,7 +19,7 @@ body {
 }
 
 // for Humble Bundle widget
-.hb-widget {
+.buy-widget {
     text-align: center;
     margin-bottom: 50px;
 }
@@ -157,6 +157,20 @@ main {
     flex: 80%;
 }
 
+.home-blurb {
+    text-align: center;
+    max-width: 600px;
+    text-wrap: balance;
+    color: $body-text;
+    font-family: $plain-text-font;
+    line-height: 1.4;
+    font-size: 125%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
 .sidebar, .core-content, .content {
     min-width: 0;
     
@@ -196,7 +210,7 @@ main {
     .centered-img {
         text-align: center;
         
-        img:not([alt="Windows"]):not([alt^="macOS"]) {
+        img:not([alt="Windows"]):not([alt^="macOS"]):not([alt^="embed-dial"]) {
             max-width: 100%;
             border: 1px solid black;
         }
